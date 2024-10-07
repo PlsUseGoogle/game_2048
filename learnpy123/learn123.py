@@ -66,12 +66,13 @@ def move_left(board):
                     col_new += 1
                     last = 0
                 else:
-                    new_board[row][col_new] = 2 * last
+                    new_board[row][col_new] = last
                     col_new += 1
                     last = board[row][col]
         if last != 0:
             new_board[row][col_new] = last
     return new_board
+
 
 
 def rotate_board(board):
